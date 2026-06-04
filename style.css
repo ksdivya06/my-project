@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+
+nav a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero button{
+    margin-top:15px;
+    padding:10px 20px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:20px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+}
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+}
